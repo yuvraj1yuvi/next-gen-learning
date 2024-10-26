@@ -1,0 +1,410 @@
+/* General styles */
+.static-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s ease;
+}
+
+.Sec1-contact {
+  text-align: center;
+  display: flex;
+  height: 35px;
+  justify-content: center;
+  font-size: 20px;
+  background: linear-gradient(
+    to right,
+    #f8d0c2,
+    #cbaaeb,
+    #abc6f1,
+    #48d6ec,
+    #edf0f4
+  );
+}
+
+.Sec1-contact i {
+  font-size: 20px;
+  height: 25px;
+  text-align: center;
+  margin-top: 8px;
+  justify-content: center;
+  margin-right: 40px;
+  color: #000;
+}
+
+.Sec1-contact img {
+  width: 15px;
+  margin-top: 10px;
+  margin-right: 6px;
+  height: 15px;
+}
+
+.social-h {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.social-h i {
+  font-size: 15px;
+  color: #000;
+  margin-right: 10px;
+}
+
+.social-h i img {
+  width: 20px;
+  height: 21px;
+  border-radius: 50%;
+}
+
+.Sec1-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  /* background: linear-gradient(to right, #d1ccf2,#8f85eb, #78a1f2, #4127ed); */
+  background: linear-gradient(to right, #c7e2ed, #9c61fa, #9961ed, #5f58e0, #1f3aea);
+
+  color: #060606;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.navbar1 {
+  display: flex; /* Show on larger screens */
+  align-items: center;
+  background-color: #abc6f1;
+  border-radius: 5px;
+  margin-right: 250px;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.nav a {
+  font-size: 25px;
+  color: #010006;
+  text-decoration: none;
+}
+
+.nav b {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.nav a:hover {
+  color: #10067a;
+}
+
+.nav-toggle {
+  display: none;
+} 
+
+.envelope a{
+cursor: pointer;
+color: #000;
+margin-right: 4px;
+text-decoration: none;
+}
+
+/* Media Queries */
+
+/* Below 480px */
+@media (max-width: 479px) {
+  .Sec1-contact {
+    flex-direction: row;
+    font-size: 16px;
+  }
+
+  
+
+  .nav-toggle {
+    display: block; /* Show the toggle button on mobile and tablet */
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 20px;
+    background: none;
+    border: none;
+  }
+  .back-button {
+    display: none; /* Hide the back button by default */
+  }
+
+  .navbar1.show .back-button {
+    display: block; /* Show the back button when nav is visible */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it appears above other elements */
+  }
+
+  .navbar1 {
+  display: none; /* Hidden by default */
+}
+
+.navbar1.show {
+  display: flex; /* Show when .show is added */
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Cover the full height */
+  background-color: #abc6f1; /* Background color */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav ul li {
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: center;
+}
+
+  .Sec1-contact .phone {
+    display: none;
+  }
+
+  /* .Sec1-contact .envelope {
+    display: none;
+  } */
+
+  .Sec1-contact i {
+    margin-right: 0;
+    font-size: 14.5px;
+  }
+
+  .Sec1-contact img {
+    width: 12px;
+    height: 12px;
+    margin-left: -4px;
+  }
+
+  .Sec1-contact .social a i {
+    font-size: 10px;
+  }
+
+  .Sec1-header {
+    flex-direction: row;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo p {
+    font-size: 14px;
+  }
+
+  .navbar1 {
+    display: none; /* Hide navbar on small screens */
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+/* 480px to 768px */
+@media (min-width: 480px) and (max-width: 768px) {
+  .Sec1-contact {
+    font-size: 18px;
+  }
+  .Sec1-contact .phone {
+    display: none;
+  }
+
+  .Sec1-contact i {
+    margin-right: 3px;
+  }
+
+  .Sec1-contact img {
+    width: 14px;
+    height: 14px;
+  }
+
+  
+
+  .nav-toggle {
+    display: block; /* Show the toggle button on mobile and tablet */
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 20px;
+    background: none;
+    border: none;
+  }
+  .back-button {
+    display: none; /* Hide the back button by default */
+  }
+
+  .navbar1.show .back-button {
+    display: block; /* Show the back button when nav is visible */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    z-index: 1001; /* Ensure it appears above other elements */
+  }
+
+
+  .Sec1-header {
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo p {
+    font-size: 14px;
+  }
+
+  .navbar1 {
+    display: none; /* Hide navbar on medium screens */
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}
+
+/* 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Sec1-contact {
+    font-size: 18px;
+  }
+
+  .Sec1-contact .envelope {
+    margin-right: 25px;
+  }
+
+  .Sec1-contact i {
+    margin-right: 5px;
+  }
+
+  .Sec1-contact img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .Sec1-header {
+    height: 55px;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar1 .back-button {
+    display: none;
+  }
+
+  .logo p {
+    font-size: 15px;
+  }
+
+  .navbar1 {
+    display: flex;
+    margin-right: 55px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+/* 1025px and above */
+@media (min-width: 1025px) {
+  .Sec1-contact {
+    font-size: 20px;
+  }
+
+  .Sec1-contact i {
+    margin-right: 10px;
+  }
+
+
+  .Sec1-contact img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .Sec1-header {
+    height: 70px;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo p {
+    font-size: 16px;
+  }
+
+  .navbar1 {
+    display: flex;
+    margin-right: 250px;
+  }
+
+  .navbar1 .back-button {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+}
+
+

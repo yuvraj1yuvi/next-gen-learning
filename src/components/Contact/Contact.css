@@ -1,0 +1,173 @@
+
+
+
+
+
+
+ .contact-us {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.contact-us-header {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 5rem;
+}
+
+.video {
+  height: 350px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* margin-bottom: -2rem; */
+  padding-top: 3rem;
+}
+
+.contact-us-header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 50px;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.contact-item {
+  max-width: 300px;
+  flex: 1 1 45%;
+  margin: 10px;
+}
+
+.contact-item h2 {
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  margin: 5px 0;
+}
+
+.social i img {
+  width: 25px;
+  height: 25px;
+}
+
+.responsive-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* height: 350px; */
+  /* width: 600px; */
+  padding-bottom: 40%;
+  position: relative;
+  margin: 2rem 4rem;
+  
+}
+
+.responsive-map iframe {
+  border: 0;
+  width: 600px;
+  height: 80rem;
+  position: absolute;
+}
+
+/* Responsive Styles */
+
+@media (min-width: 300px) and (max-width: 667px) {   
+  .contact-us-header {
+    margin-top: 7rem;
+  }
+
+  .contact-us-header h1 {
+    font-size: 30px;
+    padding: 5px 10px;
+  }
+  .video{
+    margin-top: -7rem;
+  }
+  .contact-us-header h1{
+    margin-top: -2rem;
+  }
+
+  .contact-details {
+    margin-top: -6rem;
+  }
+
+  .social i img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-item {
+    flex: 1 1 100%;
+  }
+
+  .responsive-map {
+    padding-bottom: 75%;
+  }
+  
+}
+
+@media (min-width: 668px) and (max-width: 720px) {  
+  .contact-us-header h1 {
+    font-size: 40px;
+  }
+
+  .video{
+    margin-top: -5rem;
+  }
+  
+  
+
+  .contact-item {
+    flex: 1 1 100%;
+  }
+
+  .responsive-map {
+    padding-bottom: 60%;
+  }
+}
+
+
+
+/* For desktop screens */
+@media (min-width: 1024px) and (max-width: 1400) {
+  .contact-us-header {
+    margin-top: 7rem;
+  }
+
+  .contact-us-header h1 {
+    font-size: 50px;
+  }
+  
+  .contact-us-header h1{
+    padding-top: -4rem;
+  }
+
+  .contact-details {
+    flex-direction: row;
+    margin: 0 40px;
+  }
+
+  .contact-item {
+    flex: 1 1 30%;
+  }
+
+  .responsive-map {
+    padding-bottom: 40%;
+  }
+}
+ 
+
+
