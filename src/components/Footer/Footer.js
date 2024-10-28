@@ -197,8 +197,8 @@ function Footer() {
       <div className="column-2">
         <div className="mt-2 text-center p-2" style={{ flexDirection: "row" }}>
           <p>
-            © Copyright | The Learning Science - Admin | Designed & Managed by -
-            Alfabeto Global
+            © Copyright | Next-Gen-Learning | Designed & Managed by -
+            Yuvraj Pal
           </p>
           <div className="countt text-center" style={{ width: "150px" }}>
             <span>{counter.toString().padStart(7, "0")}</span>
